@@ -69,9 +69,9 @@ Zmienne CSS na początku pliku:
 
 ```css
 :root {
-    --color-primary: #111827;
-    --color-secondary: #6b7280;
-    --color-accent: #f3f4f6;
+  --color-primary: #111827;
+  --color-secondary: #6b7280;
+  --color-accent: #f3f4f6;
 }
 ```
 
@@ -81,7 +81,7 @@ Zamień placeholder'y cyfr w kartach projektów na rzeczywiste obrazy:
 
 ```html
 <div class="bg-gray-100 rounded-lg overflow-hidden mb-6">
-    <img src="sciezka/do/obrazu.jpg" alt="Opis projektu" />
+  <img src="sciezka/do/obrazu.jpg" alt="Opis projektu" />
 </div>
 ```
 
@@ -90,12 +90,16 @@ Zamień placeholder'y cyfr w kartach projektów na rzeczywiste obrazy:
 W sekcji `<head>` pliku `index.html` możesz zmienić Google Fonts:
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=TwojaCzcionka:wght@300;400;600&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=TwojaCzcionka:wght@300;400;600&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ## 🎯 Sekcje strony
 
 ### Strona główna (index.html)
+
 1. **Header** - Stała nawigacja z logo i menu
 2. **Hero** - Powitanie i główny opis
 3. **Selected Work** - Portfolio projektów (4 karty z linkami do case studies)
@@ -104,7 +108,9 @@ W sekcji `<head>` pliku `index.html` możesz zmienić Google Fonts:
 6. **Footer** - Stopka z copyright
 
 ### Podstrony Case Study
+
 Każdy projekt ma dedykowaną podstronę z:
+
 - Hero z tytułem projektu
 - Sekcja Overview
 - Szczegóły procesu designu (Discovery, Ideation, Prototyping, Validation)
@@ -123,6 +129,7 @@ Każdy projekt ma dedykowaną podstronę z:
 ## 📱 Responsywność
 
 Breakpointy Tailwind:
+
 - Mobile: < 640px
 - Tablet: 640px - 1024px
 - Desktop: > 1024px
@@ -165,6 +172,7 @@ Szablon jest darmowy do użytku osobistego i komercyjnego.
 ## 🤝 Wsparcie
 
 W razie problemów:
+
 1. Sprawdź konsolę przeglądarki (F12) w poszukiwaniu błędów
 2. Upewnij się, że Python jest zainstalowany
 3. Sprawdź, czy port 8000 jest wolny
@@ -172,4 +180,3 @@ W razie problemów:
 ---
 
 Powodzenia z Twoim portfolio! 🎉
-

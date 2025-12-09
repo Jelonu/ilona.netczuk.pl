@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+bun.lockb
+package-lock.json
+
+# Build outputs
+dist
+build
+.cache
+
+# Git
+.git
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
