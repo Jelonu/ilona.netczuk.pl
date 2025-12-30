@@ -1,479 +1,325 @@
 <!doctype html>
-<html lang="pl" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perdoo Growth Board - Case Study | Portfolio</title>
-    <meta
-      name="description"
-      content="Case study of Perdoo Growth Board - KPI board design project"
-    />
+<html lang="en" class="scroll-smooth">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Nussknacker - Case Study | Portfolio</title>
+  <meta name="description" content="Case study of Nussknacker - Color Pallete Optimization
+  " />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
 
-    <style>
-      body {
-        font-family:
-          'Inter',
-          -apple-system,
-          BlinkMacSystemFont,
-          'Segoe UI',
-          Roboto,
-          sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-900 antialiased">
-    <!-- Header / Navigation -->
-    <header
-      class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100"
-    >
-      <nav class="container mx-auto px-6 lg:px-8 py-6">
-        <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <a
-            href="index.html"
-            class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors"
-          >
-            <span class="text-sm font-light">MD</span> Ilona
-          </a>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-          <!-- Desktop Navigation -->
-          <div class="flex items-center space-x-6">
-            <ul class="hidden md:flex items-center space-x-8">
-              <li>
-                <a
-                  href="index.html#home"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.home"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#about"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.about"
-                  >About me</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  >Linkedin</a
-                >
-              </li>
-              <li>
-                <a
-                  href="index.html#contact"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+  <style>
+    body {
+      font-family:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        sans-serif;
+    }
+  </style>
+</head>
 
-            <!-- Language Switcher -->
-            <div class="hidden md:flex items-center space-x-2">
-              <button
-                id="lang-pl"
-                class="lang-btn px-3 py-1 text-sm font-medium rounded-md transition-colors bg-gray-900 text-white"
-              >
-                PL
-              </button>
-              <button
-                id="lang-en"
-                class="lang-btn px-3 py-1 text-sm font-medium rounded-md transition-colors text-gray-600 hover:bg-gray-100"
-              >
-                EN
-              </button>
-            </div>
-          </div>
+<body class="bg-white text-gray-900 antialiased">
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <nav class="container mx-auto px-6 lg:px-8 py-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
+          <span class="text-sm font-light"></span> Ilona Netczuk
+        </a>
 
-          <!-- Mobile Menu Button -->
-          <button
-            id="mobile-menu-button"
-            class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
-          >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
-          <ul class="space-y-4">
+        <!-- Desktop Navigation -->
+        <div class="flex items-center space-x-6">
+          <ul class="hidden md:flex items-center space-x-8">
             <li>
-              <a
-                href="index.html#home"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.home"
-                >Home</a
-              >
+              <a href="index.html#home" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Home</a>
             </li>
             <li>
-              <a
-                href="index.html#about"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.about"
-                >About me</a
-              >
+              <a href="index.html#work" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">My works</a>
             </li>
             <li>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                >Linkedin</a
-              >
+              <a href="index.html#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About
+                me</a>
             </li>
+
             <li>
-              <a
-                href="index.html#contact"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.contact"
-                >Contact</a
-              >
+              <a href="index.html#contact"
+                class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
             </li>
           </ul>
-          <!-- Mobile Language Switcher -->
-          <div class="flex items-center space-x-2 mt-6 pt-4 border-t border-gray-200">
-            <button
-              id="lang-pl-mobile"
-              class="lang-btn flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors bg-gray-900 text-white"
-            >
-              PL
-            </button>
-            <button
-              id="lang-en-mobile"
-              class="lang-btn flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 bg-gray-100"
-            >
-              EN
-            </button>
-          </div>
+
+          </ul>
         </div>
-      </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main class="pt-24">
-      <!-- Hero Section -->
-      <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
-        <div class="max-w-4xl">
-          <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
-          <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-            Color Pallete Optimization
-          </p>
-        </div>
-      </section>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
 
-      <!-- Overview Section with Sidebar -->
-      <section class="container mx-auto px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <!-- Main Content -->
-          <div class="lg:col-span-2 space-y-12">
-            <!-- Overview -->
-            <div class="fade-in">
-              <h2 class="text-2xl font-semibold mb-6" data-i18n="caseStudy.overview">Overview</h2>
-              <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Nussknacker is an advanced yet user-friendly low-code tool that empowers businesses
-                to intelligently process real-time data. This enables them to react faster to
-                changes, automate processes, and make better business decisions.
-              </p>
-              <p class="text-lg text-gray-700 leading-relaxed mb-4">Visit website</p>
-              <a
-                href="https://nussknacker.io"
-                target="_blank"
-                class="text-gray-900 hover:text-gray-600 underline transition-colors"
-                >Learn more at https://nussknacker.io →</a
-              >
-            </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
+        <ul class="space-y-4">
+          <li>
+            <a href="index.html#home" class="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="index.html#work" class="block text-gray-600 hover:text-gray-900 transition-colors">My works</a>
+          </li>
+          <li>
+            <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 transition-colors">About me</a>
+          </li>
 
-            <!-- Step 1 - Discovery Phase -->
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Step 1 – Discovery phase</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                Based on user feedback, we've enhanced our app to better meet your needs. Now, you
-                can conveniently organize Key Performance Indicators (KPIs) from different teams by
-                pinning them in a dedicated section. We've also improved the target-setting feature,
-                allowing you to set goals on a monthly, quarterly, or yearly basis.
-              </p>
+          <li>
+            <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+          </li>
+        </ul>
 
-              <!-- Image Placeholder -->
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
-              >
-                <span class="text-4xl font-bold text-gray-300">User Feedback</span>
-              </div>
+      </div>
+    </nav>
+  </header>
 
-              <h4 class="text-lg font-semibold mb-4">Problem statement</h4>
-              <p class="text-gray-700 leading-relaxed">
-                Perdoo lacks centralized KPI tracking for different teams, hindering goal monitoring
-                and alignment. Limited target-setting functionality restricts users' ability to
-                define varied timeframes. User feedback highlights the need for improvements to
-                enhance functionality and flexibility in goal management.
-              </p>
-            </div>
+  <!-- Main Content -->
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
+      <div class="max-w-4xl">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
+        <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+          Color Pallete Optimization
+        </p>
+      </div>
+    </section>
 
-            <!-- Step 2 - Ideation & MVP -->
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Step 2 – Ideation & MVP</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                During the initial concept phase, we explored multiple versions to address the
-                identified problem statement. We developed various mock-ups to visualize the list of
-                Key Performance Indicators (KPIs) in conjunction with the corresponding months and
-                targets.
-              </p>
-
-              <!-- Image Placeholder -->
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
-              >
-                <span class="text-4xl font-bold text-gray-300">Low Fidelity Wireframes</span>
-              </div>
-
-              <p class="text-gray-700 leading-relaxed">
-                Through careful consideration and user feedback, we have determined the optimal
-                structure for this feature and defined the Minimum Viable Product (MVP) accordingly.
-                We decided which features to work on first using a RICE prioritization method.
-              </p>
-            </div>
-
-            <!-- Step 3 - Prototyping -->
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Step 3 – Prototyping</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                Using Figma, I developed a working prototype for user testing on volunteered
-                participants. The high-fidelity version incorporates existing components and
-                introduces new ones as necessary.
-              </p>
-
-              <!-- Image Placeholder -->
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
-              >
-                <span class="text-4xl font-bold text-gray-300">Prototype</span>
-              </div>
-            </div>
-
-            <!-- Step 4 - Validation -->
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Step 4 – Validation</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                We conducted a series of user tests on the prototype, gathering valuable feedback to
-                improve its usability. Based on the feedback received, we made necessary changes to
-                achieve the most user-friendly and effective result.
-              </p>
-
-              <p class="text-gray-700 leading-relaxed mb-6">
-                In addition, we conducted internal design review meetings to gather technical and UX
-                input from our team members. These collaborative sessions allowed us to leverage
-                their expertise and insights to further enhance the design of our solution.
-              </p>
-            </div>
-
-            <!-- Final Effect -->
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Final effect</h3>
-              <p class="text-gray-700 leading-relaxed mb-8">
-                From day one we've received a lot of positive feedback regarding the new way of
-                organizing company KPIs as well as a new way of setting targets. We also drafted
-                future iterations of the solution that potentially would improve usability and make
-                it even more powerful.
-              </p>
-
-              <!-- Metrics Grid -->
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="text-center p-6 bg-gray-50 rounded-lg">
-                  <p class="text-4xl font-bold mb-2">+1k</p>
-                  <p class="text-sm text-gray-600">Boards<br />Created</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg">
-                  <p class="text-4xl font-bold mb-2">+5k</p>
-                  <p class="text-sm text-gray-600">KPIs<br />added</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg">
-                  <p class="text-4xl font-bold mb-2">8.2</p>
-                  <p class="text-sm text-gray-600">NPS<br />score</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg">
-                  <p class="text-4xl font-bold mb-2">20</p>
-                  <p class="text-sm text-gray-600">Plan<br />Upgrades</p>
-                </div>
-              </div>
-
-              <p class="text-gray-700 leading-relaxed mt-8 italic">
-                We noticed that users loved the feature and they used it to aggregate their KPIs
-                within the platform
-              </p>
-            </div>
+    <!-- Overview Section with Sidebar -->
+    <section class="container mx-auto px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-2 space-y-12">
+          <!-- Overview -->
+          <div class="fade-in">
+            <h2 class="text-2xl font-semibold mb-6">Overview</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+              Nussknacker is an advanced yet user-friendly low-code tool that empowers businesses
+              to intelligently process real-time data. This enables them to react faster to
+              changes, automate processes, and make better business decisions.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4"></p>
+            <a href="https://nussknacker.io" target="_blank"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors">Visit website</a>
           </div>
 
-          <!-- Sidebar -->
-          <div class="lg:col-span-1">
-            <div class="sticky top-32 space-y-8">
-              <!-- Scope -->
+          <!-- Step 1 - Discovery Phase -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold mb-6">Project chalenge</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              The Nussnacker web application faced accessibility and readability issues stemming from insufficient color
+              contrast in the interface (below WCAG 2.2 standards). User feedback confirmed eye strain and discomfort
+              caused by the current color scheme. Additionally, the absence of the brand color in the application
+              weakened its visual consistency with the brand ecosystem.
+            </p>
+
+            <!-- Image Placeholder -->
+            <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
+              <span class="text-4xl font-bold text-gray-300">User Feedback</span>
+            </div>
+
+            <h4 class="text-lg font-semibold mb-4"></h4>
+            <p class="text-gray-700 leading-relaxed">
+              I conducted a comprehensive color accessibility audit of the application, also analyzing user feedback to
+              identify areas requiring enhancement.
+              A key step was optimizing the color palette by reducing the number of shades, which increased visual
+              coherence. The new palette was meticulously crafted in accordance with WCAG 2.2 and MUI Material UI
+              guidelines, with an emphasis on maximizing contrast and readability. The existing dark theme was expanded
+              to a full dark mode, valued by developers, and the brand color was strategically integrated while
+              maintaining high contrast. The entire process was iterative, based on close collaboration with the team
+              and client, and on regularly gathered user feedback.
+            </p>
+          </div>
+          <!-- Step 1 - Discovery Phase -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold mb-6">Design Approach</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+            <div class="fade-in">
+              <h3 class="text-xl font-semibold mb-6">Analysis & Audit</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Performed a comprehensive color accessibility audit of the application to pinpoint areas needing
+                enhancement. User feedback was gathered and analyzed.
+              </p>
+              <h3 class="text-xl font-semibold mb-6">Color Palette Optimization through Reduction</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                To enhance visual coherence and streamline the design, a decision was made to reduce the number of
+                colors within the application, eliminating redundant shades. The redesigned color palette was
+                meticulously crafted, adhering to WCAG 2.2 and MUI Material UI guidelines, with a primary focus on
+                maximizing contrast and readability.
+              </p>
+              <h3 class="text-xl font-semibold mb-6">Dark Mode Implementation</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Continuing the application's dark color scheme, we expanded it to include a complete dark mode, valued
+                by developers for its enhanced working comfort and reduced eye strain.
+              </p>
+              <h3 class="text-xl font-semibold mb-6">Iterative Process & User Feedback</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                This project was driven by close collaboration with the team and client, ensuring alignment and shared
+                understanding. User feedback was systematically gathered and leveraged to iteratively refine the color
+                palette.
               <div class="fade-in">
-                <h4 class="text-sm font-semibold text-gray-900 mb-4" data-i18n="caseStudy.scope">
-                  Scope
-                </h4>
-                <ul class="space-y-2 text-gray-600">
-                  <li>User Research</li>
-                  <li>UX Design</li>
-                  <li>User testing</li>
-                  <li>Data analysis</li>
-                </ul>
-              </div>
+                <h3 class="text-xl font-semibold mb-6">Achievements</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                <div class="fade-in">
+                  <h3 class="text-xl font-semibold mb-6">Significant Accessibility Improvement</h3>
+                  <p class="text-gray-700 leading-relaxed mb-6">
+                    The new color scheme meets WCAG 2.2 standards, making the application more inclusive and accessible
+                    to all users, including those with visual impairments.
+                  </p>
+                  <div class="fade-in">
+                    <h3 class="text-xl font-semibold mb-6">Improved Readability and User Comfort</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                      User feedback confirmed enhanced readability and reduced eye strain, resulting in an improved User
+                      Experience.
+                    </p>
+                    <div class="fade-in">
+                      <h3 class="text-xl font-semibold mb-6">Streamlined Developer Workflow</h3>
+                      <p class="text-gray-700 leading-relaxed mb-6">
+                        Figma documentation precisely defines the new color palette and its usage guidelines,
+                        facilitating implementation and ensuring future consistency.
+                      </p>
+                      <!-- Sidebar -->
+                      <div class="lg:col-span-1">
+                        <div class="sticky top-32 space-y-8">
+                          <!-- Scope -->
+                          <div class="fade-in">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-4">
+                              Scope
+                            </h4>
+                            <ul class="space-y-2 text-gray-600">
+                              <li>User Research</li>
+                              <li>UX Design</li>
+                              <li>UI Design</li>
+                              <li>High-fidelity mockups</li>
+                              <li>User testing</li>
 
-              <!-- Team -->
-              <div class="fade-in" style="animation-delay: 0.1s">
-                <h4 class="text-sm font-semibold text-gray-900 mb-4" data-i18n="caseStudy.team">
-                  Team
-                </h4>
-                <ul class="space-y-2 text-gray-600">
-                  <li>Product Manager</li>
-                  <li>3 Engineers</li>
-                  <li>QA Engineer</li>
-                </ul>
-              </div>
+                            </ul>
+                          </div>
 
-              <!-- Tools -->
-              <div class="fade-in" style="animation-delay: 0.2s">
-                <h4 class="text-sm font-semibold text-gray-900 mb-4" data-i18n="caseStudy.tools">
-                  Tools
-                </h4>
-                <ul class="space-y-2 text-gray-600">
-                  <li>Figma</li>
-                  <li>Whimsical</li>
-                  <li>FigJam</li>
-                  <li>Posthog</li>
-                  <li>Mixpanel</li>
-                  <li>Intercom</li>
-                  <li>Tailwind</li>
-                </ul>
-              </div>
+                          <!-- Team -->
+                          <div class="fade-in" style="animation-delay: 0.1s">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-4">
+                              Team
+                            </h4>
+                            <ul class="space-y-2 text-gray-600">
+                              <li>Product Manager</li>
+                              <li>1 Frontend Engineer</li>
+                              <li>1 Designer</li>
+                            </ul>
+                          </div>
 
-              <!-- Deliverables -->
-              <div class="fade-in" style="animation-delay: 0.3s">
-                <h4
-                  class="text-sm font-semibold text-gray-900 mb-4"
-                  data-i18n="caseStudy.deliverables"
-                >
-                  Deliverables
-                </h4>
-                <ul class="space-y-2 text-gray-600">
-                  <li>Problem Statement</li>
-                  <li>Wireframe</li>
-                  <li>Prototype</li>
-                  <li>Specification</li>
-                </ul>
-              </div>
-            </div>
+                          <!-- Tools -->
+                          <div class="fade-in" style="animation-delay: 0.2s">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-4">
+                              Tools
+                            </h4>
+                            <ul class="space-y-2 text-gray-600">
+                              <li>Figma</li>
+                              <li>Google Workspace</li>
+
+                            </ul>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    </section>
+
+    <!-- More Projects Section -->
+    <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
+      <h2 class="text-2xl font-semibold mb-12">More projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <article class="group cursor-pointer fade-in">
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+            <span class="text-6xl font-bold text-gray-300">02</span>
           </div>
-        </div>
-      </section>
+          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+            Setmore Appointments
+          </h3>
+          <p class="text-gray-600">Recurring event case study</p>
+        </article>
 
-      <!-- More Projects Section -->
-      <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
-        <h2 class="text-2xl font-semibold mb-12">More projects</h2>
+        <!-- Project Card 2 -->
+        <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+            <span class="text-6xl font-bold text-gray-300">03</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+            Setmore Mobile App
+          </h3>
+          <p class="text-gray-600">Appointment management</p>
+        </article>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Project Card 1 -->
-          <article class="group cursor-pointer fade-in">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-            >
-              <span class="text-6xl font-bold text-gray-300">02</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Setmore Appointments
-            </h3>
-            <p class="text-gray-600">Recurring event case study</p>
-          </article>
+        <!-- Project Card 3 -->
+        <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+            <span class="text-6xl font-bold text-gray-300">04</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+            LOG GE
+          </h3>
+          <p class="text-gray-600">Intelligent Asset Management Software</p>
+        </article>
+      </div>
+    </section>
 
-          <!-- Project Card 2 -->
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-            >
-              <span class="text-6xl font-bold text-gray-300">03</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Setmore Mobile App
-            </h3>
-            <p class="text-gray-600">Appointment management</p>
-          </article>
+    <!-- Contact CTA Section -->
+    <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">
+          Want to work together?
+        </h2>
+        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+          <span>Connect on</span>
+          <a href="https://linkedin.com" target="_blank"
+            class="text-gray-900 hover:text-gray-600 underline transition-colors">Linkedin</a>
+          <span>or get in touch via</span>
+          <a href="mailto:hello@example.com"
+            class="text-gray-900 hover:text-gray-600 underline transition-colors">email</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-          <!-- Project Card 3 -->
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-            >
-              <span class="text-6xl font-bold text-gray-300">04</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              LOG GE
-            </h3>
-            <p class="text-gray-600">Intelligent Asset Management Software</p>
-          </article>
-        </div>
-      </section>
+  <!-- Footer -->
+  <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
+    <p class="text-sm text-gray-500">
+      <span id="year"></span> <span>© by</span> Ilona
+    </p>
+  </footer>
 
-      <!-- Contact CTA Section -->
-      <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-        <div class="max-w-2xl">
-          <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in" data-i18n="contact.title">
-            Want to work together?
-          </h2>
-          <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-            <span data-i18n="contact.connect">Connect on</span>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors"
-              >Linkedin</a
-            >
-            <span data-i18n="contact.or">or get in touch via</span>
-            <a
-              href="mailto:hello@example.com"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors"
-              data-i18n="contact.email"
-              >email</a
-            >
-          </p>
-        </div>
-      </section>
-    </main>
+  <!-- JavaScript -->
 
-    <!-- Footer -->
-    <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
-      <p class="text-sm text-gray-500">
-        <span id="year"></span> <span data-i18n="footer.rights">© by</span> Ilona
-      </p>
-    </footer>
+  <script src="script.js"></script>
+</body>
 
-    <!-- JavaScript -->
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
-  </body>
 </html>

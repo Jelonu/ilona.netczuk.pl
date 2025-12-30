@@ -1,439 +1,332 @@
 <!doctype html>
-<html lang="pl" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Ilona</title>
-    <meta
-      name="description"
-      content="Portfolio - Designer bringing together business, people, and technology."
-    />
+<html lang="en" class="scroll-smooth">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Ilona</title>
+  <meta name="description" content="Portfolio - Designer bringing together business, people, and technology." />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
 
-    <style>
-      body {
-        font-family:
-          'Inter',
-          -apple-system,
-          BlinkMacSystemFont,
-          'Segoe UI',
-          Roboto,
-          sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-900 antialiased">
-    <!-- Header / Navigation -->
-    <header
-      class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100"
-    >
-      <nav class="container mx-auto px-6 lg:px-8 py-6">
-        <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <a
-            href="#home"
-            class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors"
-          >
-            <span class="text-sm font-light">MD</span> Ilona
-          </a>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-          <!-- Desktop Navigation -->
-          <div class="flex items-center space-x-6">
-            <ul class="hidden md:flex items-center space-x-8">
-              <li>
-                <a
-                  href="#home"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.home"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.about"
-                  >About me</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  >Linkedin</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                  data-i18n="nav.contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+  <style>
+    body {
+      font-family:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        sans-serif;
+    }
+  </style>
+</head>
 
-            <!-- Language Switcher -->
-            <div class="hidden md:flex items-center space-x-2">
-              <button
-                id="lang-pl"
-                class="lang-btn px-3 py-1 text-sm font-medium rounded-md transition-colors bg-gray-900 text-white"
-              >
-                PL
-              </button>
-              <button
-                id="lang-en"
-                class="lang-btn px-3 py-1 text-sm font-medium rounded-md transition-colors text-gray-600 hover:bg-gray-100"
-              >
-                EN
-              </button>
-            </div>
-          </div>
+<body class="bg-white text-gray-900 antialiased">
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <nav class="container mx-auto px-6 lg:px-8 py-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
+          <span class="text-sm font-light"></span> Ilona Netczuk
+        </a>
 
-          <!-- Mobile Menu Button -->
-          <button
-            id="mobile-menu-button"
-            class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
-          >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
-          <ul class="space-y-4">
+        <!-- Desktop Navigation -->
+        <div class="flex items-center space-x-6">
+          <ul class="hidden md:flex items-center space-x-8">
             <li>
-              <a
-                href="#home"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.home"
-                >Home</a
-              >
+              <a href="#home" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Home</a>
             </li>
             <li>
-              <a
-                href="#about"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.about"
-                >About me</a
-              >
+              <a href="#work" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">My works</a>
             </li>
             <li>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                >Linkedin</a
-              >
+              <a href="#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About me</a>
             </li>
+
             <li>
-              <a
-                href="#contact"
-                class="block text-gray-600 hover:text-gray-900 transition-colors"
-                data-i18n="nav.contact"
-                >Contact</a
-              >
+              <a href="#contact" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
             </li>
           </ul>
-          <!-- Mobile Language Switcher -->
-          <div class="flex items-center space-x-2 mt-6 pt-4 border-t border-gray-200">
-            <button
-              id="lang-pl-mobile"
-              class="lang-btn flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors bg-gray-900 text-white"
-            >
-              PL
-            </button>
-            <button
-              id="lang-en-mobile"
-              class="lang-btn flex-1 px-3 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 bg-gray-100"
-            >
-              EN
-            </button>
-          </div>
+
+          </ul>
         </div>
-      </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main class="pt-24">
-      <!-- Hero Section -->
-      <section id="home" class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-        <div class="max-w-4xl">
-          <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight fade-in">
-            <span data-i18n="hero.greeting">Hi! I'm Ilona —</span>
-            <span class="block text-gray-600" data-i18n="hero.title">Product Designer.</span>
-          </h1>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
 
-          <h2
-            class="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 fade-in"
-            style="animation-delay: 0.2s"
-            data-i18n="hero.welcome"
-          >
-            Welcome to my portfolio.
-          </h2>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
+        <ul class="space-y-4">
+          <li>
+            <a href="#home" class="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#work" class="block text-gray-600 hover:text-gray-900 transition-colors">My works</a>
+          </li>
+          <li>
+            <a href="#about" class="block text-gray-600 hover:text-gray-900 transition-colors">About me</a>
+          </li>
 
-          <p class="text-xl lg:text-2xl text-gray-600 mb-12 fade-in" style="animation-delay: 0.4s">
-            <span data-i18n="hero.description"
-              >I work in different disciplines such as UI-design, UX-design and Visual Identity.
-              Always in close collaboration with other designers, developers and clients.</span
-            >
-            <a
-              href="#about"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors ml-2"
-              data-i18n="hero.learnMore"
-              >Learn more</a
-            >
-          </p>
-        </div>
-      </section>
+          <li>
+            <a href="#contact" class="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+          </li>
+        </ul>
 
-      <!-- Selected Work Section -->
-      <section id="work" class="container mx-auto px-6 lg:px-8 py-20">
-        <h2 class="text-2xl font-semibold mb-12" data-i18n="work.title">Selected work</h2>
+      </div>
+    </nav>
+  </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <!-- Project Card 1 -->
-          <a href="work-project-1.html" class="block">
-            <article class="group cursor-pointer fade-in">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">01</span>
-              </div>
-              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-                Nussknacker
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project1.description">
-                Color Palette Optimization
+  <!-- Main Content -->
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+      <div class="max-w-4xl">
+        <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight fade-in">
+          <span>Hi! I'm Ilona —</span>
+          <span class="block text-gray-600">Product Designer.</span>
+        </h1>
+
+        <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 fade-in" style="animation-delay: 0.2s" <h2
+          class="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 fade-in" style="animation-delay: 0.2s">
+          Welcome to my portfolio.
+        </h2>
+
+        <p class="text-xl lg:text-2xl text-gray-600 mb-12 fade-in" style="animation-delay: 0.4s">
+          <span>I work in different disciplines such as UI-design, UX-design and Visual
+            Identity.
+            Always in close collaboration with other designers, developers and clients.</span>
+          <a href="#about" class="text-gray-900 hover:text-gray-600 underline transition-colors ml-2">Learn more</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section id="work" class="container mx-auto px-6 lg:px-8 py-20">
+      <h2 class="text-2xl font-semibold mb-12">Selected work</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Project Card 1 -->
+        <a href="work-project-1.html" class="block">
+          <article class="group cursor-pointer fade-in">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">01</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Nussknacker
+            </h3>
+            <p class="text-gray-600">
+              Color Palette Optimization
+            </p>
+          </article>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="work-project-2.html" class="block">
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">02</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Skuot
+            </h3>
+            <p class="text-gray-600">
+              Branding & Website Design
+            </p>
+          </article>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a href="work-project-3.html" class="block">
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">03</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Nussknacker
+            </h3>
+            <p class="text-gray-600">UI improvement</p>
+          </article>
+        </a>
+
+        <!-- Project Card 4 -->
+        <a href="work-project-4.html" class="block">
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.3s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">04</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Lasy i Obywatele
+            </h3>
+            <p class="text-gray-600">UX improvement</p>
+          </article>
+        </a>
+
+        <!-- Project Card 5 -->
+        <a href="work-project-5.html" class="block">
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.4s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">05</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Branding
+            </h3>
+            <p class="text-gray-600">
+              Project description
+            </p>
+          </article>
+        </a>
+
+        <!-- Project Card 6 -->
+        <a href="work-project-6.html" class="block">
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.5s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+              <span class="text-6xl font-bold text-gray-300">06</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Some project
+            </h3>
+            <p class="text-gray-600">
+              Project description
+            </p>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="about" class="container mx-auto px-6 lg:px-8 py-20">
+      <h2 class="text-2xl font-semibold mb-12">My experience</h2>
+
+      <div class="max-w-3xl">
+        <!-- Timeline Item 1 -->
+        <div class="mb-12 fade-in" style="animation-delay: 0.1s">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Lasy i Obywatele</h3>
+              <p class="text-gray-600">
+                UI/UX Designer
               </p>
-            </article>
-          </a>
-
-          <!-- Project Card 2 -->
-          <a href="work-project-2.html" class="block">
-            <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">02</span>
-              </div>
-              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-                Skuot
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project2.description">
-                Branding & Website Design
-              </p>
-            </article>
-          </a>
-
-          <!-- Project Card 3 -->
-          <a href="work-project-3.html" class="block">
-            <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">03</span>
-              </div>
-              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-                Nussknacker
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project3.description">UI improvement</p>
-            </article>
-          </a>
-
-          <!-- Project Card 4 -->
-          <a href="work-project-4.html" class="block">
-            <article class="group cursor-pointer fade-in" style="animation-delay: 0.3s">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">04</span>
-              </div>
-              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-                Lasy i Obywatele
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project4.description">UX improvement</p>
-            </article>
-          </a>
-
-          <!-- Project Card 5 -->
-          <a href="work-project-5.html" class="block">
-            <article class="group cursor-pointer fade-in" style="animation-delay: 0.4s">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">05</span>
-              </div>
-              <h3
-                class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors"
-                data-i18n="projects.project5.title"
-              >
-                Branding
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project5.description">
-                Project description
-              </p>
-            </article>
-          </a>
-
-          <!-- Project Card 6 -->
-          <a href="work-project-6.html" class="block">
-            <article class="group cursor-pointer fade-in" style="animation-delay: 0.5s">
-              <div
-                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
-              >
-                <span class="text-6xl font-bold text-gray-300">06</span>
-              </div>
-              <h3
-                class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors"
-                data-i18n="projects.project6.title"
-              >
-                Jakiś projekt
-              </h3>
-              <p class="text-gray-600" data-i18n="projects.project6.description">
-                Project description
-              </p>
-            </article>
-          </a>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="about" class="container mx-auto px-6 lg:px-8 py-20">
-        <h2 class="text-2xl font-semibold mb-12" data-i18n="experience.title">My experience</h2>
-
-        <div class="max-w-3xl">
-          <!-- Timeline Item 1 -->
-          <div class="mb-12 fade-in">
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-              <div>
-                <h3 class="text-xl font-semibold mb-1">Perdoo</h3>
-                <p class="text-gray-600" data-i18n="experience.roles.staffDesigner">
-                  Staff Product Designer
-                </p>
-              </div>
-              <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right"
-                >Mar 2024 — <span data-i18n="experience.present">Present</span></span
-              >
             </div>
-          </div>
-
-          <!-- Timeline Item 2 -->
-          <div class="mb-12 fade-in" style="animation-delay: 0.1s">
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-              <div>
-                <h3 class="text-xl font-semibold mb-1">Perdoo</h3>
-                <p class="text-gray-600" data-i18n="experience.roles.principalDesigner">
-                  Principal Product Designer
-                </p>
-              </div>
-              <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right"
-                >Dec 2020 — Mar 2024</span
-              >
-            </div>
-          </div>
-
-          <!-- Timeline Item 3 -->
-          <div class="mb-12 fade-in" style="animation-delay: 0.2s">
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-              <div>
-                <h3 class="text-xl font-semibold mb-1">Setmore</h3>
-                <p class="text-gray-600" data-i18n="experience.roles.seniorUX">
-                  Senior UX Designer
-                </p>
-              </div>
-              <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right"
-                >Sep 2018 — Dec 2020</span
-              >
-            </div>
-          </div>
-
-          <!-- Timeline Item 4 -->
-          <div class="mb-12 fade-in" style="animation-delay: 0.3s">
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-              <div>
-                <h3 class="text-xl font-semibold mb-1">Cylo Media</h3>
-                <p class="text-gray-600" data-i18n="experience.roles.leadUI">Lead UI Designer</p>
-              </div>
-              <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right"
-                >Dec 2017 — Aug 2018</span
-              >
-            </div>
-          </div>
-
-          <!-- Timeline Item 5 -->
-          <div class="mb-12 fade-in" style="animation-delay: 0.4s">
-            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-              <div>
-                <h3 class="text-xl font-semibold mb-1">LOG Systems</h3>
-                <p class="text-gray-600" data-i18n="experience.roles.productDesigner">
-                  Product Designer
-                </p>
-              </div>
-              <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right"
-                >Sep 2014 — Aug 2017</span
-              >
-            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Jun 2025 — Present / part time</span>
           </div>
         </div>
-      </section>
 
-      <!-- Contact CTA Section -->
-      <section id="contact" class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-        <div class="max-w-2xl">
-          <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in" data-i18n="contact.title">
-            Want to work together?
-          </h2>
-          <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-            <span data-i18n="contact.connect">Connect on</span>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors"
-              >Linkedin</a
-            >
-            <span data-i18n="contact.or">or get in touch via</span>
-            <a
-              href="mailto:hello@example.com"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors"
-              data-i18n="contact.email"
-              >email</a
-            >
-          </p>
+        <!-- Timeline Item  -->
+        <div class="mb-12 fade-in">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">DataFuze</h3>
+              <p class="text-gray-600">
+                Staff Designer
+              </p>
+            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">May 2025 — <span>Present / part
+                time</span></span>
+          </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
-      <p class="text-sm text-gray-500">
-        <span id="year"></span> <span data-i18n="footer.rights">© by</span> Ilona
-      </p>
-    </footer>
+        <!-- Timeline Item 3 -->
+        <div class="mb-12 fade-in" style="animation-delay: 0.2s">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Nussknacker</h3>
+              <p class="text-gray-600">
+                UI/UX Designer
+              </p>
+            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Feb 2024 — Dec 2024</span>
+          </div>
+        </div>
 
-    <!-- JavaScript -->
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
-  </body>
+        <!-- Timeline Item 4 -->
+        <div class="mb-12 fade-in" style="animation-delay: 0.3s">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">TouK</h3>
+              <p class="text-gray-600">UI/UX Designer</p>
+            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Aug 2015 — Jan 2024</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="mb-12 fade-in" style="animation-delay: 0.4s">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Primary school SP 206 Warsaw</h3>
+              <p class="text-gray-600">
+                Teacher of plastic arts
+              </p>
+            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Aug 2014 — Aug 2015</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div class="mb-12 fade-in" style="animation-delay: 0.4s">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Primary school SKiE Warsaw</h3>
+              <p class="text-gray-600">
+                Teacher of plastic arts and technology
+              </p>
+            </div>
+            <span class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Aug 2010 — Aug 2014</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">
+          Let's start creating together
+        </h2>
+        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+          <span>Connect on</span>
+          <a href="https://www.linkedin.com/in/ilona-netczuk-9150a45a/" target="_blank"
+            class="text-gray-900 hover:text-gray-600 underline transition-colors">Linkedin</a>
+          <span>or get in touch via</span>
+          <a href="mailto:ilona@netczuk.pl"
+            class="text-gray-900 hover:text-gray-600 underline transition-colors">email</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
+    <p class="text-sm text-gray-500">
+      <span id="year"></span> <span>© by</span> Ilona
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+</body>
+
 </html>
