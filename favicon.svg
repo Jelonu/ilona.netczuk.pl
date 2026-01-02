@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    /* Domyślnie (Jasny tryb systemu): Czarne tło, biały tekst */
+    rect { fill: black; }
+    text { fill: white; }
+
+    /* Ciemny tryb systemu: Białe tło, czarny tekst */
+    @media (prefers-color-scheme: dark) {
+      rect { fill: white; }
+      text { fill: black; }
+    }
+  </style>
+
+  <!-- Tło (koło) -->
+  <rect width="512" height="512" rx="256" />
+
+  <!-- Tekst (Inicjały) - wyśrodkowany -->
+  <text x="50%" y="50%" 
+        font-family="Arial, sans-serif" 
+        font-weight="bold" 
+        font-size="240" 
+        text-anchor="middle" 
+        dy=".35em">
+    IN
+  </text>
+</svg>
