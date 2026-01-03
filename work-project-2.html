@@ -1,259 +1,334 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skuot - Space for work | Portfolio</title>
+    <meta name="description" content="Case study of Skuot - Coworking space design project" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+    <link rel="mask-icon" href="favicon.svg" color="#000000" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skuot - Space for work | Portfolio</title>
-  <meta name="description" content="Case study of Skuot - Coworking space design project" />
-  <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
-  <link rel="mask-icon" href="favicon.svg" color="#000000" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+    </style>
+  </head>
 
-  <style>
-    body {
-      font-family:
-        'Inter',
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        sans-serif;
-    }
-  </style>
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <!-- Header / Navigation -->
+    <header
+      class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100"
+    >
+      <nav class="container mx-auto px-6 lg:px-8 py-6">
+        <div class="flex items-center justify-between">
+          <a
+            href="index.html"
+            class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors"
+          >
+            <span class="text-sm font-light"></span> Ilona Netczuk
+          </a>
 
-<body class="bg-white text-gray-900 antialiased">
-  <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-    <nav class="container mx-auto px-6 lg:px-8 py-6">
-      <div class="flex items-center justify-between">
-        <a href="index.html" class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
-          <span class="text-sm font-light"></span> Ilona Netczuk
-        </a>
+          <div class="flex items-center space-x-6">
+            <ul class="hidden md:flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html#home"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#work"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >My works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >About me</a
+                >
+              </li>
 
-        <div class="flex items-center space-x-6">
-          <ul class="hidden md:flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html#contact"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
+          <ul class="space-y-4">
             <li>
-              <a href="index.html#home" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+              <a
+                href="index.html#home"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="index.html#work" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">My works</a>
+              <a
+                href="index.html#work"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >My works</a
+              >
             </li>
             <li>
-              <a href="index.html#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About
-                me</a>
+              <a
+                href="index.html#about"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >About me</a
+              >
             </li>
 
             <li>
-              <a href="index.html#contact"
-                class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+              <a
+                href="index.html#contact"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+    <main class="pt-24">
+      <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Skuot - Space for work</h1>
+          <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            Branding and Website Case Study
+          </p>
+        </div>
+      </section>
 
-      <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
-        <ul class="space-y-4">
-          <li>
-            <a href="index.html#home" class="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
-          </li>
-          <li>
-            <a href="index.html#work" class="block text-gray-600 hover:text-gray-900 transition-colors">My works</a>
-          </li>
-          <li>
-            <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 transition-colors">About me</a>
-          </li>
+      <section class="container mx-auto px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-12">
+            <div class="fade-in">
+              <h2 class="text-2xl font-semibold mb-6">Overview</h2>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Skuot is a new coworking space in central Warsaw. They needed a new brand and
+                website to attract creative people looking for a relaxed place to work together. My
+                role involved creating a brand that visually communicated this dynamic and welcoming
+                atmosphere.
+              </p>
+            </div>
 
-          <li>
-            <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+            <h2 class="text-2xl font-semibold mb-6">Branding Elements</h2>
+            <div class="fade-in">
+              <h3 class="text-xl font-semibold mb-6">Logo Design</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                The logo concept was inspired by the core ideas of networking, communication, and
+                the exchange of inspiration, visually represented through elements reminiscent of
+                Wi-Fi signals. This symbolizes an open community and the power of collaborative
+                work.
+              </p>
 
-  <main class="pt-24">
-    <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
-      <div class="max-w-4xl">
-        <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Skuot - Space for work</h1>
-        <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          Branding and Website Case Study
-        </p>
-      </div>
-    </section>
+              <h3 class="text-xl font-semibold mb-6">Color Palette</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                To establish a modern and energetic feel, I selected a contrasting color scheme of
+                vibrant yellow and bold black. This palette aims to resonate with creative and
+                innovative professionals.
+              </p>
 
-    <section class="container mx-auto px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div class="lg:col-span-2 space-y-12">
-          <div class="fade-in">
-            <h2 class="text-2xl font-semibold mb-6">Overview</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              Skuot is a new coworking space in central Warsaw. They needed a new brand and
-              website to attract creative people looking for a relaxed place to work together. My
-              role involved creating a brand that visually communicated this dynamic and welcoming
-              atmosphere.
-            </p>
+              <h3 class="text-xl font-semibold mb-6">Illustrations</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Injecting a sense of playfulness and approachability, I incorporated doodle-style
+                illustrations throughout the brand. These elements contribute to a light and
+                informal atmosphere within the coworking space.
+              </p>
+
+              <div class="fade-in">
+                <h3 class="text-xl font-semibold mb-6">
+                  Branding and Website Design for a Coworking Space
+                </h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  For Skuot, a Warsaw-based coworking space dedicated to creative professionals, I
+                  designed a comprehensive visual identity and an intuitive website. The branding –
+                  featuring a logo inspired by a Wi-Fi signal, an energetic color palette of yellow
+                  and black, and custom doodle-style illustrations – communicates openness,
+                  modernity, and a collaborative spirit. The website design, fully responsive and
+                  enriched with my own professional interior photography, attractively showcases
+                  Skuot's offerings and unique atmosphere. The result is a cohesive image of an
+                  inspiring space that effectively builds a strong community.
+                </p>
+
+                <div
+                  class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+                >
+                  <img
+                    src="images/skuot-2.jpg"
+                    alt="Skuot Branding"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+                >
+                  <img
+                    src="images/skuot-3.jpg"
+                    alt="Skuot Branding"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold mb-6">Website Design</h2>
+              <div class="fade-in">
+                <h3 class="text-xl font-semibold mb-6">Intuitive User Experience</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  The website was designed with a focus on intuitive navigation and a fully
+                  responsive layout, ensuring optimal viewing across desktops, tablets, and mobile
+                  devices.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-6">Engaging Content Presentation</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  The website content was structured to present Skuot's offerings in an attractive
+                  and easily digestible format, emphasizing the unique benefits and atmosphere of
+                  the space.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-6">Professional Photography</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  I also took professional photos of the interior to show the true vibe of Skuot.
+                  These shots are featured throughout the website to highlight the space and what it
+                  offers.
+                </p>
+
+                <div
+                  class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+                >
+                  <img
+                    src="images/skuot-1.jpg"
+                    alt="Skuot Photography"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <div class="fade-in">
+                <h3 class="text-xl font-semibold mb-6">
+                  A Strong Brand and Foundation for the Skuot Community
+                </h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  With a consistent and visually appealing brand identity and website, Skuot
+                  presents itself as a friendly and inspiring coworking space for creative
+                  professionals in Warsaw. Carefully developed design solutions have created a solid
+                  foundation for building a strong and engaged community.
+                </p>
+
+                <div
+                  class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+                >
+                  <img
+                    src="images/skuot-4.jpg"
+                    alt="Skuot Final Design"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h2 class="text-2xl font-semibold mb-6">Branding Elements</h2>
-          <div class="fade-in">
-            <h3 class="text-xl font-semibold mb-6">Logo Design</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              The logo concept was inspired by the core ideas of networking, communication, and
-              the exchange of inspiration, visually represented through elements reminiscent of
-              Wi-Fi signals. This symbolizes an open community and the power of collaborative
-              work.
-            </p>
-
-            <h3 class="text-xl font-semibold mb-6">Color Palette</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              To establish a modern and energetic feel, I selected a contrasting color scheme of
-              vibrant yellow and bold black. This palette aims to resonate with creative and
-              innovative professionals.
-            </p>
-
-            <h3 class="text-xl font-semibold mb-6">Illustrations</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              Injecting a sense of playfulness and approachability, I incorporated doodle-style
-              illustrations throughout the brand. These elements contribute to a light and
-              informal atmosphere within the coworking space.
-            </p>
-
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">
-                Branding and Website Design for a Coworking Space
-              </h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                For Skuot, a Warsaw-based coworking space dedicated to creative professionals, I
-                designed a comprehensive visual identity and an intuitive website. The branding –
-                featuring a logo inspired by a Wi-Fi signal, an energetic color palette of yellow
-                and black, and custom doodle-style illustrations – communicates openness,
-                modernity, and a collaborative spirit. The website design, fully responsive and
-                enriched with my own professional interior photography, attractively showcases
-                Skuot's offerings and unique atmosphere. The result is a cohesive image of an
-                inspiring space that effectively builds a strong community.
-              </p>
-
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-                <img src="images/skuot-2.jpg" alt="Skuot Branding" class="w-full h-full object-cover" />
+          <!-- Sidebar -->
+          <div class="lg:col-span-1">
+            <div class="sticky top-32 space-y-8">
+              <!-- Scope -->
+              <div class="fade-in">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Scope</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>Branding</li>
+                  <li>Web Design</li>
+                  <li>Photography</li>
+                  <li>Copywriting</li>
+                  <li>Implementation</li>
+                </ul>
               </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-                <img src="images/skuot-3.jpg" alt="Skuot Branding" class="w-full h-full object-cover" />
-              </div>
-            </div>
-            <h2 class="text-2xl font-semibold mb-6">Website Design</h2>
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Intuitive User Experience</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                The website was designed with a focus on intuitive navigation and a fully
-                responsive layout, ensuring optimal viewing across desktops, tablets, and mobile
-                devices.
-              </p>
 
-              <h3 class="text-xl font-semibold mb-6">Engaging Content Presentation</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                The website content was structured to present Skuot's offerings in an attractive
-                and easily digestible format, emphasizing the unique benefits and atmosphere of
-                the space.
-              </p>
-
-              <h3 class="text-xl font-semibold mb-6">Professional Photography</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                I also took professional photos of the interior to show the true vibe of Skuot.
-                These shots are featured throughout the website to highlight the space and what it
-                offers.
-              </p>
-
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-                <img src="images/skuot-1.jpg" alt="Skuot Photography" class="w-full h-full object-cover" />
-              </div>
-            </div>
-
-            <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">
-                A Strong Brand and Foundation for the Skuot Community
-              </h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                With a consistent and visually appealing brand identity and website, Skuot
-                presents itself as a friendly and inspiring coworking space for creative
-                professionals in Warsaw. Carefully developed design solutions have created a solid
-                foundation for building a strong and engaged community.
-              </p>
-
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-                <img src="images/skuot-4.jpg" alt="Skuot Final Design" class="w-full h-full object-cover" />
+              <!-- Tools -->
+              <div class="fade-in" style="animation-delay: 0.1s">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Tools</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>Figma</li>
+                  <li>Illustrator</li>
+                  <li>Lightroom</li>
+                  <li>Framer</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Sidebar -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-32 space-y-8">
-            <!-- Scope -->
-            <div class="fade-in">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">Scope</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>Branding</li>
-                <li>Web Design</li>
-                <li>Photography</li>
-                <li>Copywriting</li>
-                <li>Implementation</li>
-              </ul>
-            </div>
-
-            <!-- Tools -->
-            <div class="fade-in" style="animation-delay: 0.1s">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">Tools</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>Figma</li>
-                <li>Illustrator</li>
-                <li>Lightroom</li>
-                <li>Framer</li>
-              </ul>
-            </div>
-          </div>
+      <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">Want to work together?</h2>
+          <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            Connect on
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >Linkedin</a
+            >
+            or get in touch via
+            <a
+              href="mailto:hello@example.com"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >email</a
+            >
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">Want to work together?</h2>
-        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          Connect on
-          <a href="https://linkedin.com" target="_blank"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">Linkedin</a>
-          or get in touch via
-          <a href="mailto:hello@example.com"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">email</a>
-        </p>
-      </div>
-    </section>
-  </main>
+    <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
+      <p class="text-sm text-gray-500"><span id="year"></span> © by Ilona</p>
+    </footer>
 
-  <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
-    <p class="text-sm text-gray-500"><span id="year"></span> © by Ilona</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
