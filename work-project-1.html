@@ -1,240 +1,318 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nussknacker - Case Study | Portfolio</title>
+    <meta
+      name="description"
+      content="Case study of Nussknacker - Color Pallete Optimization
+  "
+    />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+    <link rel="mask-icon" href="favicon.svg" color="#000000" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Nussknacker - Case Study | Portfolio</title>
-  <meta name="description" content="Case study of Nussknacker - Color Pallete Optimization
-  " />
-  <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
-  <link rel="mask-icon" href="favicon.svg" color="#000000">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+    </style>
+  </head>
 
-  <style>
-    body {
-      font-family:
-        'Inter',
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        sans-serif;
-    }
-  </style>
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <!-- Header / Navigation -->
+    <header
+      class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100"
+    >
+      <nav class="container mx-auto px-6 lg:px-8 py-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors"
+          >
+            <span class="text-sm font-light"></span> Ilona Netczuk
+          </a>
 
-<body class="bg-white text-gray-900 antialiased">
-  <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-    <nav class="container mx-auto px-6 lg:px-8 py-6">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <a href="index.html" class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
-          <span class="text-sm font-light"></span> Ilona Netczuk
-        </a>
+          <!-- Desktop Navigation -->
+          <div class="flex items-center space-x-6">
+            <ul class="hidden md:flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html#home"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#work"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >My works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >About me</a
+                >
+              </li>
 
-        <!-- Desktop Navigation -->
-        <div class="flex items-center space-x-6">
-          <ul class="hidden md:flex items-center space-x-8">
-            <li>
-              <a href="index.html#home" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="index.html#work" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">My works</a>
-            </li>
-            <li>
-              <a href="index.html#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About
-                me</a>
-            </li>
+              <li>
+                <a
+                  href="index.html#contact"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <a href="index.html#contact"
-                class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-            </li>
-          </ul>
-
-          </ul>
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="index.html#home"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#work"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >My works</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#about"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >About me</a
+              >
+            </li>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
-        <ul class="space-y-4">
-          <li>
-            <a href="index.html#home" class="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
-          </li>
-          <li>
-            <a href="index.html#work" class="block text-gray-600 hover:text-gray-900 transition-colors">My works</a>
-          </li>
-          <li>
-            <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 transition-colors">About me</a>
-          </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-          <li>
-            <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-          </li>
-        </ul>
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
+          <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            Color Pallete Optimization
+          </p>
+        </div>
+      </section>
 
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main class="pt-24">
-    <!-- Hero Section -->
-    <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
-      <div class="max-w-4xl">
-        <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
-        <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          Color Pallete Optimization
-        </p>
-      </div>
-    </section>
-
-    <!-- Overview Section with Sidebar -->
-    <section class="container mx-auto px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <!-- Main Content -->
-        <div class="lg:col-span-2 space-y-12">
-          <!-- Overview -->
-          <div class="fade-in">
-            <h2 class="text-2xl font-semibold mb-6">Overview</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              Nussknacker is an advanced yet user-friendly low-code tool that empowers businesses
-              to intelligently process real-time data. This enables them to react faster to
-              changes, automate processes, and make better business decisions.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4"></p>
-            <a href="https://nussknacker.io" target="_blank"
-              class="text-gray-900 hover:text-gray-600 underline transition-colors">Visit website</a>
-          </div>
-
-          <!-- Step 1 - Discovery Phase -->
-          <div class="fade-in">
-            <h3 class="text-xl font-semibold mb-6">Project chalenge</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              The Nussnacker web application faced accessibility and readability issues stemming from insufficient color
-              contrast in the interface (below WCAG 2.2 standards). User feedback confirmed eye strain and discomfort
-              caused by the current color scheme. Additionally, the absence of the brand color in the application
-              weakened its visual consistency with the brand ecosystem.
-            </p>
-
-            <!-- Image Placeholder -->
-            <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-              <img src="images/nu-colors-1.jpg" alt="Project visualization showing color palette optimization"
-                class="w-full h-full object-cover">
-            </div>
-
-            <!-- Second Image -->
-            <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-              <img src="images/nu-colors-2.jpg"
-                alt="Figma documentation showing the new color palette and usage guidelines"
-                class="w-full h-full object-cover">
-            </div>
-
-            <h4 class="text-lg font-semibold mb-4"></h4>
-            <p class="text-gray-700 leading-relaxed">
-              I conducted a comprehensive color accessibility audit of the application, also analyzing user feedback to
-              identify areas requiring enhancement.
-              A key step was optimizing the color palette by reducing the number of shades, which increased visual
-              coherence. The new palette was meticulously crafted in accordance with WCAG 2.2 and MUI Material UI
-              guidelines, with an emphasis on maximizing contrast and readability. The existing dark theme was expanded
-              to a full dark mode, valued by developers, and the brand color was strategically integrated while
-              maintaining high contrast. The entire process was iterative, based on close collaboration with the team
-              and client, and on regularly gathered user feedback.
-            </p>
-          </div>
-          <!-- Step 1 - Discovery Phase -->
-          <div class="fade-in">
-            <h3 class="text-xl font-semibold mb-6">Design Approach</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
+      <!-- Overview Section with Sidebar -->
+      <section class="container mx-auto px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <!-- Main Content -->
+          <div class="lg:col-span-2 space-y-12">
+            <!-- Overview -->
             <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Analysis & Audit</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                Performed a comprehensive color accessibility audit of the application to pinpoint areas needing
-                enhancement. User feedback was gathered and analyzed.
+              <h2 class="text-2xl font-semibold mb-6">Overview</h2>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Nussknacker is an advanced yet user-friendly low-code tool that empowers businesses
+                to intelligently process real-time data. This enables them to react faster to
+                changes, automate processes, and make better business decisions.
               </p>
-              <h3 class="text-xl font-semibold mb-6">Color Palette Optimization through Reduction</h3>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4"></p>
+              <a
+                href="https://nussknacker.io"
+                target="_blank"
+                class="text-gray-900 hover:text-gray-600 underline transition-colors"
+                >Visit website</a
+              >
+            </div>
+
+            <!-- Step 1 - Discovery Phase -->
+            <div class="fade-in">
+              <h3 class="text-xl font-semibold mb-6">Project chalenge</h3>
               <p class="text-gray-700 leading-relaxed mb-6">
-                To enhance visual coherence and streamline the design, a decision was made to reduce the number of
-                colors within the application, eliminating redundant shades. The redesigned color palette was
-                meticulously crafted, adhering to WCAG 2.2 and MUI Material UI guidelines, with a primary focus on
-                maximizing contrast and readability.
-              </p>
-              <h3 class="text-xl font-semibold mb-6">Dark Mode Implementation</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                Continuing the application's dark color scheme, we expanded it to include a complete dark mode, valued
-                by developers for its enhanced working comfort and reduced eye strain.
-              </p>
-              <h3 class="text-xl font-semibold mb-6">Iterative Process & User Feedback</h3>
-              <p class="text-gray-700 leading-relaxed mb-6">
-                This project was driven by close collaboration with the team and client, ensuring alignment and shared
-                understanding. User feedback was systematically gathered and leveraged to iteratively refine the color
-                palette.
+                The Nussnacker web application faced accessibility and readability issues stemming
+                from insufficient color contrast in the interface (below WCAG 2.2 standards). User
+                feedback confirmed eye strain and discomfort caused by the current color scheme.
+                Additionally, the absence of the brand color in the application weakened its visual
+                consistency with the brand ecosystem.
               </p>
 
-              <!-- Third Image -->
+              <!-- Image Placeholder -->
               <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-                <img src="images/nu-colors-3.jpg" alt="Nussknacker dashboard showing updated interface"
-                  class="w-full h-full object-cover">
+                <img
+                  src="images/nu-colors-1.jpg"
+                  alt="Project visualization showing color palette optimization"
+                  class="w-full h-full object-cover"
+                />
               </div>
 
-              <!-- Fourth Image -->
+              <!-- Second Image -->
               <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-                <img src="images/nu-colors-4.jpg" alt="Color contrast accessibility check mockup"
-                  class="w-full h-full object-cover">
+                <img
+                  src="images/nu-colors-2.jpg"
+                  alt="Figma documentation showing the new color palette and usage guidelines"
+                  class="w-full h-full object-cover"
+                />
               </div>
 
+              <h4 class="text-lg font-semibold mb-4"></h4>
+              <p class="text-gray-700 leading-relaxed">
+                I conducted a comprehensive color accessibility audit of the application, also
+                analyzing user feedback to identify areas requiring enhancement. A key step was
+                optimizing the color palette by reducing the number of shades, which increased
+                visual coherence. The new palette was meticulously crafted in accordance with WCAG
+                2.2 and MUI Material UI guidelines, with an emphasis on maximizing contrast and
+                readability. The existing dark theme was expanded to a full dark mode, valued by
+                developers, and the brand color was strategically integrated while maintaining high
+                contrast. The entire process was iterative, based on close collaboration with the
+                team and client, and on regularly gathered user feedback.
+              </p>
+            </div>
+            <!-- Step 1 - Discovery Phase -->
+            <div class="fade-in">
+              <h3 class="text-xl font-semibold mb-6">Design Approach</h3>
+              <p class="text-gray-700 leading-relaxed mb-6"></p>
               <div class="fade-in">
-                <h3 class="text-xl font-semibold mb-6">Achievements</h3>
+                <h3 class="text-xl font-semibold mb-6">Analysis & Audit</h3>
                 <p class="text-gray-700 leading-relaxed mb-6">
+                  Performed a comprehensive color accessibility audit of the application to pinpoint
+                  areas needing enhancement. User feedback was gathered and analyzed.
+                </p>
+                <h3 class="text-xl font-semibold mb-6">
+                  Color Palette Optimization through Reduction
+                </h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  To enhance visual coherence and streamline the design, a decision was made to
+                  reduce the number of colors within the application, eliminating redundant shades.
+                  The redesigned color palette was meticulously crafted, adhering to WCAG 2.2 and
+                  MUI Material UI guidelines, with a primary focus on maximizing contrast and
+                  readability.
+                </p>
+                <h3 class="text-xl font-semibold mb-6">Dark Mode Implementation</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  Continuing the application's dark color scheme, we expanded it to include a
+                  complete dark mode, valued by developers for its enhanced working comfort and
+                  reduced eye strain.
+                </p>
+                <h3 class="text-xl font-semibold mb-6">Iterative Process & User Feedback</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  This project was driven by close collaboration with the team and client, ensuring
+                  alignment and shared understanding. User feedback was systematically gathered and
+                  leveraged to iteratively refine the color palette.
+                </p>
+
+                <!-- Third Image -->
+                <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
+                  <img
+                    src="images/nu-colors-3.jpg"
+                    alt="Nussknacker dashboard showing updated interface"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Fourth Image -->
+                <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
+                  <img
+                    src="images/nu-colors-4.jpg"
+                    alt="Color contrast accessibility check mockup"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
                 <div class="fade-in">
-                  <h3 class="text-xl font-semibold mb-6">Significant Accessibility Improvement</h3>
-                  <p class="text-gray-700 leading-relaxed mb-6">
-                    The new color scheme meets WCAG 2.2 standards, making the application more inclusive and accessible
-                    to all users, including those with visual impairments.
-                  </p>
+                  <h3 class="text-xl font-semibold mb-6">Achievements</h3>
+                  <p class="text-gray-700 leading-relaxed mb-6"></p>
                   <div class="fade-in">
-                    <h3 class="text-xl font-semibold mb-6">Improved Readability and User Comfort</h3>
+                    <h3 class="text-xl font-semibold mb-6">
+                      Significant Accessibility Improvement
+                    </h3>
                     <p class="text-gray-700 leading-relaxed mb-6">
-                      User feedback confirmed enhanced readability and reduced eye strain, resulting in an improved User
-                      Experience.
+                      The new color scheme meets WCAG 2.2 standards, making the application more
+                      inclusive and accessible to all users, including those with visual
+                      impairments.
                     </p>
                     <div class="fade-in">
-                      <h3 class="text-xl font-semibold mb-6">Streamlined Developer Workflow</h3>
+                      <h3 class="text-xl font-semibold mb-6">
+                        Improved Readability and User Comfort
+                      </h3>
                       <p class="text-gray-700 leading-relaxed mb-6">
-                        Figma documentation precisely defines the new color palette and its usage guidelines,
-                        facilitating implementation and ensuring future consistency.
+                        User feedback confirmed enhanced readability and reduced eye strain,
+                        resulting in an improved User Experience.
                       </p>
+                      <div class="fade-in">
+                        <h3 class="text-xl font-semibold mb-6">Streamlined Developer Workflow</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                          Figma documentation precisely defines the new color palette and its usage
+                          guidelines, facilitating implementation and ensuring future consistency.
+                        </p>
 
-                      <!-- Fifth Image -->
-                      <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-                        <img src="images/nu-colors-5.jpg" alt="Accessibility check detail visualization"
-                          class="w-full h-full object-cover">
-                      </div>
+                        <!-- Fifth Image -->
+                        <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
+                          <img
+                            src="images/nu-colors-5.jpg"
+                            alt="Accessibility check detail visualization"
+                            class="w-full h-full object-cover"
+                          />
+                        </div>
 
-                      <!-- Sixth Image -->
-                      <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
-                        <img src="images/nu-colors-6.jpg" alt="Comprehensive Figma color documentation"
-                          class="w-full h-full object-cover">
+                        <!-- Sixth Image -->
+                        <div class="rounded-lg overflow-hidden mb-8 aspect-video shadow-md">
+                          <img
+                            src="images/nu-colors-6.jpg"
+                            alt="Comprehensive Figma color documentation"
+                            class="w-full h-full object-cover"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -242,125 +320,123 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Sidebar -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-32 space-y-8">
-            <!-- Scope -->
-            <div class="fade-in">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">
-                Scope
-              </h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>User Research</li>
-                <li>UX Design</li>
-                <li>UI Design</li>
-                <li>High-fidelity mockups</li>
-                <li>User testing</li>
-              </ul>
-            </div>
+          <!-- Sidebar -->
+          <div class="lg:col-span-1">
+            <div class="sticky top-32 space-y-8">
+              <!-- Scope -->
+              <div class="fade-in">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Scope</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>User Research</li>
+                  <li>UX Design</li>
+                  <li>UI Design</li>
+                  <li>High-fidelity mockups</li>
+                  <li>User testing</li>
+                </ul>
+              </div>
 
-            <!-- Team -->
-            <div class="fade-in" style="animation-delay: 0.1s">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">
-                Team
-              </h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>Product Manager</li>
-                <li>2 Frontend Engineers</li>
-                <li>1 Designer</li>
-              </ul>
-            </div>
+              <!-- Team -->
+              <div class="fade-in" style="animation-delay: 0.1s">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Team</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>Product Manager</li>
+                  <li>2 Frontend Engineers</li>
+                  <li>1 Designer</li>
+                </ul>
+              </div>
 
-            <!-- Tools -->
-            <div class="fade-in" style="animation-delay: 0.2s">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">
-                Tools
-              </h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>Figma</li>
-                <li>Google Docs</li>
-                <li>Google Sheets</li>
-                <li>Slack</li>
-              </ul>
+              <!-- Tools -->
+              <div class="fade-in" style="animation-delay: 0.2s">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Tools</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>Figma</li>
+                  <li>Google Docs</li>
+                  <li>Google Sheets</li>
+                  <li>Slack</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- More Projects Section -->
-    <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
-      <h2 class="text-2xl font-semibold mb-12">More projects</h2>
+      <!-- More Projects Section -->
+      <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
+        <h2 class="text-2xl font-semibold mb-12">More projects</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Project Card 1 -->
-        <article class="group cursor-pointer fade-in">
-          <div
-            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-            <span class="text-6xl font-bold text-gray-300">02</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-            Setmore Appointments
-          </h3>
-          <p class="text-gray-600">Recurring event case study</p>
-        </article>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <article class="group cursor-pointer fade-in">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
+            >
+              <span class="text-6xl font-bold text-gray-300">02</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Setmore Appointments
+            </h3>
+            <p class="text-gray-600">Recurring event case study</p>
+          </article>
 
-        <!-- Project Card 2 -->
-        <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
-          <div
-            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-            <span class="text-6xl font-bold text-gray-300">03</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-            Setmore Mobile App
-          </h3>
-          <p class="text-gray-600">Appointment management</p>
-        </article>
+          <!-- Project Card 2 -->
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
+            >
+              <span class="text-6xl font-bold text-gray-300">03</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              Setmore Mobile App
+            </h3>
+            <p class="text-gray-600">Appointment management</p>
+          </article>
 
-        <!-- Project Card 3 -->
-        <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
-          <div
-            class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors">
-            <span class="text-6xl font-bold text-gray-300">04</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-            LOG GE
-          </h3>
-          <p class="text-gray-600">Intelligent Asset Management Software</p>
-        </article>
-      </div>
-    </section>
+          <!-- Project Card 3 -->
+          <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] flex items-center justify-center group-hover:bg-gray-200 transition-colors"
+            >
+              <span class="text-6xl font-bold text-gray-300">04</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+              LOG GE
+            </h3>
+            <p class="text-gray-600">Intelligent Asset Management Software</p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Contact CTA Section -->
-    <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">
-          Want to work together?
-        </h2>
-        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          <span>Connect on</span>
-          <a href="https://linkedin.com" target="_blank"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">Linkedin</a>
-          <span>or get in touch via</span>
-          <a href="mailto:hello@example.com"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">email</a>
-        </p>
-      </div>
-    </section>
-  </main>
+      <!-- Contact CTA Section -->
+      <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">Want to work together?</h2>
+          <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            <span>Connect on</span>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >Linkedin</a
+            >
+            <span>or get in touch via</span>
+            <a
+              href="mailto:hello@example.com"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >email</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
-    <p class="text-sm text-gray-500">
-      <span id="year"></span> <span>© by</span> Ilona
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
+      <p class="text-sm text-gray-500"><span id="year"></span> <span>© by</span> Ilona</p>
+    </footer>
 
-  <!-- JavaScript -->
+    <!-- JavaScript -->
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
