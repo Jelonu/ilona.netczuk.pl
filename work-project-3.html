@@ -1,314 +1,399 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nussknacker UI Improvement | Portfolio</title>
+    <meta name="description" content="Case study of Nussknacker UI Improvement" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+    <link rel="mask-icon" href="favicon.svg" color="#000000" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nussknacker UI Improvement | Portfolio</title>
-  <meta name="description" content="Case study of Nussknacker UI Improvement" />
-  <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
-  <link rel="mask-icon" href="favicon.svg" color="#000000" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+      }
+    </style>
+  </head>
 
-  <style>
-    body {
-      font-family:
-        'Inter',
-        -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        Roboto,
-        sans-serif;
-    }
-  </style>
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <header
+      class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100"
+    >
+      <nav class="container mx-auto px-6 lg:px-8 py-6">
+        <div class="flex items-center justify-between">
+          <a
+            href="index.html"
+            class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors"
+          >
+            <span class="text-sm font-light"></span> Ilona Netczuk
+          </a>
 
-<body class="bg-white text-gray-900 antialiased">
-  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-    <nav class="container mx-auto px-6 lg:px-8 py-6">
-      <div class="flex items-center justify-between">
-        <a href="index.html" class="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
-          <span class="text-sm font-light"></span> Ilona Netczuk
-        </a>
+          <div class="flex items-center space-x-6">
+            <ul class="hidden md:flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html#home"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#work"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >My works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#about"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >About me</a
+                >
+              </li>
 
-        <div class="flex items-center space-x-6">
-          <ul class="hidden md:flex items-center space-x-8">
+              <li>
+                <a
+                  href="index.html#contact"
+                  class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
+          <ul class="space-y-4">
             <li>
-              <a href="index.html#home" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+              <a
+                href="index.html#home"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="index.html#work" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">My works</a>
+              <a
+                href="index.html#work"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >My works</a
+              >
             </li>
             <li>
-              <a href="index.html#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors">About
-                me</a>
+              <a
+                href="index.html#about"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >About me</a
+              >
             </li>
 
             <li>
-              <a href="index.html#contact"
-                class="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+              <a
+                href="index.html#contact"
+                class="block text-gray-600 hover:text-gray-900 transition-colors"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
+      </nav>
+    </header>
 
-        <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+    <main class="pt-24">
+      <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
+          <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            UI Improvement
+          </p>
+        </div>
+      </section>
 
-      <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4">
-        <ul class="space-y-4">
-          <li>
-            <a href="index.html#home" class="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
-          </li>
-          <li>
-            <a href="index.html#work" class="block text-gray-600 hover:text-gray-900 transition-colors">My works</a>
-          </li>
-          <li>
-            <a href="index.html#about" class="block text-gray-600 hover:text-gray-900 transition-colors">About me</a>
-          </li>
+      <section class="container mx-auto px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2 space-y-12">
+            <div class="fade-in">
+              <h2 class="text-2xl font-semibold mb-6">Design Challenge</h2>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Forms in the Nussknacker application play an important role in the user's
+                interaction with the system. Their length and structure cause difficulties for the
+                user.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                User feedback analysis confirmed issues with clarity and difficulty in data
+                navigation. Inconsistent information grouping hindered context comprehension and
+                effective data entry.
+              </p>
 
-          <li>
-            <a href="index.html#contact" class="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="pt-24">
-    <section class="container mx-auto px-6 lg:px-8 py-12 lg:py-20">
-      <div class="max-w-4xl">
-        <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">Nussknacker</h1>
-        <p class="text-2xl lg:text-3xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          UI Improvement
-        </p>
-      </div>
-    </section>
-
-    <section class="container mx-auto px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div class="lg:col-span-2 space-y-12">
-          <div class="fade-in">
-            <h2 class="text-2xl font-semibold mb-6">Design Challenge</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              Forms in the Nussknacker application play an important role in the user's
-              interaction with the system. Their length and structure cause difficulties for the
-              user.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-              User feedback analysis confirmed issues with clarity and difficulty in data
-              navigation. Inconsistent information grouping hindered context comprehension and
-              effective data entry.
-            </p>
-
-            <div class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-              <img src="images/nu-ui-1.jpg" alt="Nussknacker UI Challenge" class="w-full h-full object-cover" />
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+              >
+                <img
+                  src="images/nu-ui-1.jpg"
+                  alt="Nussknacker UI Challenge"
+                  class="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </div>
-
-          <div class="fade-in">
-            <h3 class="text-xl font-semibold mb-6">Design Approach</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">
-              To enhance the User Experience of forms, a comprehensive redesign was undertaken,
-              focusing on:
-            </p>
 
             <div class="fade-in">
-              <h3 class="text-xl font-semibold mb-6">Layout Simplification</h3>
+              <h3 class="text-xl font-semibold mb-6">Design Approach</h3>
               <p class="text-gray-700 leading-relaxed mb-6">
-                Implementing a two-column layout within a modal as a key structural change.
+                To enhance the User Experience of forms, a comprehensive redesign was undertaken,
+                focusing on:
               </p>
 
               <div class="fade-in">
-                <h3 class="text-xl font-semibold mb-6">Logical Data Grouping</h3>
+                <h3 class="text-xl font-semibold mb-6">Layout Simplification</h3>
                 <p class="text-gray-700 leading-relaxed mb-6">
-                  Dividing the form into two zones: the left column for data editing, focused on
-                  active data entry, and the right column for contextual and general information
-                  about a given node, including name, type, documentation link, input/output. This
-                  division aims to reduce user cognitive load and facilitate data context
-                  understanding.
+                  Implementing a two-column layout within a modal as a key structural change.
                 </p>
 
                 <div class="fade-in">
-                  <h3 class="text-xl font-semibold mb-6">UI Modernization</h3>
+                  <h3 class="text-xl font-semibold mb-6">Logical Data Grouping</h3>
                   <p class="text-gray-700 leading-relaxed mb-6">
-                    Applying modern inputs from the Material UI library, improving the aesthetics
-                    and readability of forms. Adapting the color scheme to the dark mode
-                    previously implemented in the application, ensuring visual consistency and
-                    ergonomics.
+                    Dividing the form into two zones: the left column for data editing, focused on
+                    active data entry, and the right column for contextual and general information
+                    about a given node, including name, type, documentation link, input/output. This
+                    division aims to reduce user cognitive load and facilitate data context
+                    understanding.
                   </p>
 
-                  <div
-                    class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center">
-                    <img src="images/nu-ui-2.jpg" alt="Nussknacker UI Modernization"
-                      class="w-full h-full object-cover" />
-                  </div>
-
                   <div class="fade-in">
-                    <h3 class="text-xl font-semibold mb-6">Project Results</h3>
+                    <h3 class="text-xl font-semibold mb-6">UI Modernization</h3>
                     <p class="text-gray-700 leading-relaxed mb-6">
-                      Applying modern inputs from the Material UI library, improving the
-                      aesthetics and readability of forms. Adapting the color scheme to the dark
-                      mode previously implemented in the application, ensuring visual consistency
-                      and ergonomics.
+                      Applying modern inputs from the Material UI library, improving the aesthetics
+                      and readability of forms. Adapting the color scheme to the dark mode
+                      previously implemented in the application, ensuring visual consistency and
+                      ergonomics.
                     </p>
+
+                    <div
+                      class="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video flex items-center justify-center"
+                    >
+                      <img
+                        src="images/nu-ui-2.jpg"
+                        alt="Nussknacker UI Modernization"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div class="fade-in">
+                      <h3 class="text-xl font-semibold mb-6">Project Results</h3>
+                      <p class="text-gray-700 leading-relaxed mb-6">
+                        Applying modern inputs from the Material UI library, improving the
+                        aesthetics and readability of forms. Adapting the color scheme to the dark
+                        mode previously implemented in the application, ensuring visual consistency
+                        and ergonomics.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Sidebar -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-32 space-y-8">
-            <div class="fade-in">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">Scope</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>UI Design</li>
-                <li>User Testing</li>
-                <li>Prototyping</li>
-              </ul>
-            </div>
+          <!-- Sidebar -->
+          <div class="lg:col-span-1">
+            <div class="sticky top-32 space-y-8">
+              <div class="fade-in">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Scope</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>UI Design</li>
+                  <li>User Testing</li>
+                  <li>Prototyping</li>
+                </ul>
+              </div>
 
-            <div class="fade-in" style="animation-delay: 0.1s">
-              <h4 class="text-sm font-semibold text-gray-900 mb-4">Tools</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>Figma</li>
-              </ul>
+              <div class="fade-in" style="animation-delay: 0.1s">
+                <h4 class="text-sm font-semibold text-gray-900 mb-4">Tools</h4>
+                <ul class="space-y-2 text-gray-600">
+                  <li>Figma</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- More Projects Section -->
-    <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
-      <h2 class="text-2xl font-semibold mb-12">More projects</h2>
+      <!-- More Projects Section -->
+      <section class="container mx-auto px-6 lg:px-8 py-20 border-t border-gray-100">
+        <h2 class="text-2xl font-semibold mb-12">More projects</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Project Card 1 -->
-        <a href="work-project-1.html" class="block">
-          <article class="group cursor-pointer fade-in">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-nu-colors.jpg" alt="Nussknacker - Color Palette Optimization"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Nussknacker
-            </h3>
-            <p class="text-gray-600">Color Palette Optimization</p>
-          </article>
-        </a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <a href="work-project-1.html" class="block">
+            <article class="group cursor-pointer fade-in">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-nu-colors.jpg"
+                  alt="Nussknacker - Color Palette Optimization"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                Nussknacker
+              </h3>
+              <p class="text-gray-600">Color Palette Optimization</p>
+            </article>
+          </a>
 
-        <!-- Project Card 2 -->
-        <a href="work-project-2.html" class="block">
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-skuot.jpg" alt="Skuot - Branding & Website Design"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Skuot
-            </h3>
-            <p class="text-gray-600">Branding & Website Design</p>
-          </article>
-        </a>
+          <!-- Project Card 2 -->
+          <a href="work-project-2.html" class="block">
+            <article class="group cursor-pointer fade-in" style="animation-delay: 0.1s">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-skuot.jpg"
+                  alt="Skuot - Branding & Website Design"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                Skuot
+              </h3>
+              <p class="text-gray-600">Branding & Website Design</p>
+            </article>
+          </a>
 
-        <!-- Project Card 3 -->
-        <a href="work-project-3.html" class="block">
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-nu-ui.jpg" alt="Nussknacker - UI improvement"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Nussknacker
-            </h3>
-            <p class="text-gray-600">UI improvement</p>
-          </article>
-        </a>
+          <!-- Project Card 3 -->
+          <a href="work-project-3.html" class="block">
+            <article class="group cursor-pointer fade-in" style="animation-delay: 0.2s">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-nu-ui.jpg"
+                  alt="Nussknacker - UI improvement"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                Nussknacker
+              </h3>
+              <p class="text-gray-600">UI improvement</p>
+            </article>
+          </a>
 
-        <!-- Project Card 4 -->
-        <a href="work-project-4.html" class="block">
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.3s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-lasy-i-obywatele.jpg" alt="Lasy i Obywatele - UX improvement"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Lasy i Obywatele
-            </h3>
-            <p class="text-gray-600">UX improvement</p>
-          </article>
-        </a>
+          <!-- Project Card 4 -->
+          <a href="work-project-4.html" class="block">
+            <article class="group cursor-pointer fade-in" style="animation-delay: 0.3s">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-lasy-i-obywatele.jpg"
+                  alt="Lasy i Obywatele - UX improvement"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                Lasy i Obywatele
+              </h3>
+              <p class="text-gray-600">UX improvement</p>
+            </article>
+          </a>
 
-        <!-- Project Card 5 -->
-        <a href="work-project-5.html" class="block">
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.4s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-touk.jpg" alt="TouK - Visual Communication & Branding"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              TouK
-            </h3>
-            <p class="text-gray-600">Visual Communication & Branding</p>
-          </article>
-        </a>
+          <!-- Project Card 5 -->
+          <a href="work-project-5.html" class="block">
+            <article class="group cursor-pointer fade-in" style="animation-delay: 0.4s">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-touk.jpg"
+                  alt="TouK - Visual Communication & Branding"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                TouK
+              </h3>
+              <p class="text-gray-600">Visual Communication & Branding</p>
+            </article>
+          </a>
 
-        <!-- Project Card 6 -->
-        <a href="work-project-6.html" class="block">
-          <article class="group cursor-pointer fade-in" style="animation-delay: 0.5s">
-            <div
-              class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors">
-              <img src="images/index-branding.jpg" alt="Visual Identity Design"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
-              Branding
-            </h3>
-            <p class="text-gray-600">Visual Identity Design</p>
-          </article>
-        </a>
-      </div>
-    </section>
+          <!-- Project Card 6 -->
+          <a href="work-project-6.html" class="block">
+            <article class="group cursor-pointer fade-in" style="animation-delay: 0.5s">
+              <div
+                class="bg-gray-100 rounded-lg overflow-hidden mb-6 aspect-[4/3] group-hover:bg-gray-200 transition-colors"
+              >
+                <img
+                  src="images/index-branding.jpg"
+                  alt="Visual Identity Design"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                Branding
+              </h3>
+              <p class="text-gray-600">Visual Identity Design</p>
+            </article>
+          </a>
+        </div>
+      </section>
 
-    <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">Want to work together?</h2>
-        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
-          Connect on
-          <a href="https://linkedin.com" target="_blank"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">Linkedin</a>
-          or get in touch via
-          <a href="mailto:hello@example.com"
-            class="text-gray-900 hover:text-gray-600 underline transition-colors">email</a>
-        </p>
-      </div>
-    </section>
-  </main>
+      <section class="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl lg:text-5xl font-bold mb-8 fade-in">Want to work together?</h2>
+          <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.2s">
+            Connect on
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >Linkedin</a
+            >
+            or get in touch via
+            <a
+              href="mailto:hello@example.com"
+              class="text-gray-900 hover:text-gray-600 underline transition-colors"
+              >email</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
 
-  <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
-    <p class="text-sm text-gray-500"><span id="year"></span> © by Ilona</p>
-  </footer>
+    <footer class="container mx-auto px-6 lg:px-8 py-12 border-t border-gray-100">
+      <p class="text-sm text-gray-500"><span id="year"></span> © by Ilona</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
